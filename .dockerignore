@@ -1,0 +1,12 @@
+# Exclude VCS and ZAST artifacts from build context
+.git
+.gitattributes
+.zast
+.github
+
+# Keep Python source (glob/, *.py, js/, components/) and data JSONs needed by the node
+# but drop caches and test artifacts
+__pycache__
+*.pyc
+.pytest_cache
+.cache
